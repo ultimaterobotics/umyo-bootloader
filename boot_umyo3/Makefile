@@ -2,7 +2,7 @@ PROJECT_NAME     := uboot_ble
 TARGETS          := uboot_ble
 OUTPUT_DIRECTORY := build
 
-SDK_ROOT := ../../urf_lib/nrf_usdk52
+SDK_ROOT := ../urf_lib/nrf_usdk52
 PROJ_DIR := .
 
 $(OUTPUT_DIRECTORY)/uboot_ble.out: \
@@ -11,13 +11,13 @@ $(OUTPUT_DIRECTORY)/uboot_ble.out: \
 # Source files common to all targets
 SRC_FILES += \
   $(PROJ_DIR)/../main.c \
-  $(PROJ_DIR)/../../urf_lib/urf_timer.c \
-  $(PROJ_DIR)/../../urf_lib/urf_radio.c \
-  $(PROJ_DIR)/../../urf_lib/urf_uart.c \
-  $(PROJ_DIR)/../../urf_lib/urf_ble_peripheral.c \
-  $(PROJ_DIR)/../../urf_lib/urf_ble_encryption.c \
-  $(PROJ_DIR)/../../urf_lib/urf_ble_smp_process.c \
-  $(PROJ_DIR)/../../urf_lib/urf_ble_att_process.c \
+  $(PROJ_DIR)/../urf_lib/urf_timer.c \
+  $(PROJ_DIR)/../urf_lib/urf_radio.c \
+  $(PROJ_DIR)/../urf_lib/urf_uart.c \
+  $(PROJ_DIR)/../urf_lib/urf_ble_peripheral.c \
+  $(PROJ_DIR)/../urf_lib/urf_ble_encryption.c \
+  $(PROJ_DIR)/../urf_lib/urf_ble_smp_process.c \
+  $(PROJ_DIR)/../urf_lib/urf_ble_att_process.c \
   $(SDK_ROOT)/gcc/gcc_startup_nrf52.S 
 #  $(SDK_ROOT)/system_nrf52.c \
 
@@ -25,7 +25,7 @@ SRC_FILES += \
 INC_FOLDERS += \
   $(PROJ_DIR) \
   $(PROJ_DIR)/../ \
-  $(PROJ_DIR)/../../urf_lib \
+  $(PROJ_DIR)/../urf_lib \
   $(SDK_ROOT)/device \
   $(SDK_ROOT)/cmsis/include \
   $(SDK_ROOT) \
