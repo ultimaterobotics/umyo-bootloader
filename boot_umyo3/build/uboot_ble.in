@@ -1,1 +1,0 @@
-build/uboot_ble/main.c.o build/uboot_ble/urf_timer.c.o build/uboot_ble/urf_radio.c.o build/uboot_ble/urf_uart.c.o build/uboot_ble/urf_ble_peripheral.c.o build/uboot_ble/urf_ble_encryption.c.o build/uboot_ble/urf_ble_smp_process.c.o build/uboot_ble/urf_ble_att_process.c.o build/uboot_ble/gcc_startup_nrf52.S.o -lc -lnosys -lm
